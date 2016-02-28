@@ -1,0 +1,28 @@
+html, body {
+    margin:0;
+    padding:0;
+    background-color:whitesmoke;
+    font-family:Verdana, Geneva, Helvetica, Arial, sans-serif;
+}
+div#content {
+    margin:auto;
+    max-width:720px;
+    border:1px solid silver;
+    background-color:white;
+    border-radius:12px;
+}
+div#header img {
+    width:100%;
+    border-radius:12px;
+}
+div#body {
+    padding:1em;
+}
+div#body img {
+    max-width:688px;
+}
+div#body iframe {
+    margin-left:-16px;
+    width:720px;
+    height:480px;
+}
