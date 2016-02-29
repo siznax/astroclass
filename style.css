@@ -26,3 +26,12 @@ div#body iframe {
     width:720px;
     height:480px;
 }
+img#clearsky, img#spectrum, img#elements {
+    -webkit-filter:grayscale(100%);
+    filter:grayscale(100%);
+    border-radius:8px;
+}
+img#clearsky:hover, img#spectrum:hover, img#elements:hover {
+    filter:none;
+    -webkit-filter:none;
+}
