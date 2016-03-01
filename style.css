@@ -29,7 +29,8 @@ div#toplinks a {
     padding:0.4em 0.8em;
     text-decoration:none;
     background:black;
-    color:white;
+    color:khaki;
+    color:rgba(250, 234, 75);
     border-radius:0.2em;
 }
 div#moon {
