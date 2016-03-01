@@ -6,6 +6,8 @@
     <title>Astronomy at Woodside</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+    <script lang="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <script lang="javascript" src="site.js"></script>
   </head>
   <body>
     <div id="header"><img alt="Stellarium capture" src="sky.png"></div>
@@ -28,6 +30,11 @@
         
         <h1>Astronomy at Woodside</h1>
 
+        <ul>
+          <li>History of Astronomy (<a href="https://docs.google.com/document/d/1w943p-SwgJZETUNcYJhEAkjDQ5SUpH2grKEeMB-SQe0/edit?usp=sharing">handout</a>,
+            <a href="https://docs.google.com/document/d/1B5axYYGAilzw9Y6YSxnTvzUTOZRnOkPq3aT_SRMWRxw/edit?usp=sharing">worksheet</a>)
+        </ul>
+        
         <p>Day 3: <i>Wednesday 2 March 2016</i></p>
         <ul>
           <li>Finish: History of Astronomy
@@ -143,24 +150,50 @@
             <img id="constellations" alt="Modern Constellations"
                  src="constellations.png"></a></div>
 
+        <div align="center" style="margin:64px 0;">
+          <h3>Messier objects</h3>
+          <a href="https://en.wikipedia.org/wiki/Messier_objects"
+             target="_blank">
+            <img id="messier" alt="Messier objects"
+                 src="Messier.jpg"></a></div>
+
+        <div align="center" style="margin:64px 0;">
+          <h3>Caldwell catalogue</h3>
+          <a href="https://en.wikipedia.org/wiki/Caldwell_catalogue"
+             target="_blank">
+            <img id="caldwell" alt="Caldwell catalogue"
+                 src="Caldwell.jpg"></a></div>
+
         <a name="resources"><hr></a>
 
         <h2>Resources</h2>
 
         <ul>
           <li><a href="http://apod.nasa.gov/apod/" target="_blank">APOD</a> Astronomy Picture of the Day
-          <li><a href="http://earthsky.org/" target="_blank">Earth & Sky</a> updates on your cosmos and world
-          <li><a href="http://www.google.com/sky/about.html" target="_blank">Google Sky</a> browse and explore the universe
           <li><a href="http://www.heavens-above.com/" target="_blank">Heavens Above</a> sky chart and currently visible man-made objects
-          <li><a href="http://www.h2g2.com/" target="_blank">The Hitchhiker's Guide to the Galaxy</a>: Earth Edition
           <li><a href="http://skymaps.com/" target="_blank">Sky Maps</a> free monthly sky maps
           <li><a href="http://www.ianridpath.com/startales/startales3.htm" target="_blank">Star Tales</a> by Ian Ridpath
           <li><a href="http://www.stellarium.org/" target="_blank">Stellarium</a> planetarium software
-          <li><a href="http://www.universetoday.com/" target="_blank">Universe Today</a> space and astronomy news
-          <li><a href="http://www.wolframalpha.com/examples/Astronomy.html" target="_blank">Wolfram Alpha Astronomy examples</a>
-          <li><a href="https://www.zooniverse.org/" target="_blank">Zooniverse</a> citizen science
+          <li><a href="http://www.wolframalpha.com/examples/Astronomy.html" target="_blank">Wolfram Alpha</a> Astronomy examples
         </ul>
 
+        <div id="apod">
+          <img id="apod_img"><br>
+          <a href="http://apod.nasa.gov/" target="_blank">APOD</a>
+          <b><span id="apod_title"></span></b> &mdash;
+          <span id="apod_txt"></span></div>
+
+        <h3>Further Resources</h3>
+
+        <ul>
+          <li><a href="https://www.astrosociety.org/" target="_blank">Astronomical Society of the Pacific</a>
+          <li><a href="http://earthsky.org/" target="_blank">Earth & Sky</a> updates on your cosmos and world
+          <li><a href="http://www.google.com/sky/about.html" target="_blank">Google Sky</a> browse and explore the universe
+          <li><a href="http://www.h2g2.com/" target="_blank">The Hitchhiker's Guide to the Galaxy</a>: Earth Edition
+          <li><a href="http://www.universetoday.com/" target="_blank">Universe Today</a> space and astronomy news
+          <li><a href="https://www.zooniverse.org/" target="_blank">Zooniverse</a> citizen science
+        </ul>        
+        
         <h3>Video</h3>
 
         <ul>
@@ -176,11 +209,10 @@
       </div>
     </div>
 
-<div align=center style="margin:32px;">
-  <a href="https://github.com/siznax/astroclass/"
-     title="Fork me on GitHub"
-     target="_blank"><img src="Octocat.png" style="padding:32px;"></a>
-</div>
+    <div align=center style="margin:32px;">
+      <a href="https://github.com/siznax/astroclass/"
+         title="Fork me on GitHub" target="_blank">
+        <img src="Octocat.png" style="padding:32px;"></a></div>
 
   </body>
 </html>

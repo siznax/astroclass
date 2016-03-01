@@ -4,6 +4,15 @@ html, body {
     background-color:whitesmoke;
     font-family:Verdana, Geneva, Helvetica, Arial, sans-serif;
 }
+div#apod {
+    margin:auto;
+    max-width:720px;
+    font-size:x-small;
+    text-align:justify;
+}
+div#apod img {
+    width:720px;
+}
 div#header {
     margin:auto;
     max-width:720px;
@@ -29,6 +38,9 @@ div#body iframe {
     margin-left:-16px;
     width:720px;
     height:480px;
+}
+div#toplinks {
+    margin-top:8px;
 }
 div#toplinks a {
     padding:0.4em 0.8em;
