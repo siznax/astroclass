@@ -4,11 +4,16 @@ html, body {
     background-color:whitesmoke;
     font-family:Verdana, Geneva, Helvetica, Arial, sans-serif;
 }
+div#header {
+    margin:auto;
+    max-width:720px;
+}
 div#header img {
     width:100%;
 }
 div#content {
     margin:auto;
+    margin-top:16px;
     max-width:720px;
     border:1px solid silver;
     background-color:white;
@@ -30,7 +35,7 @@ div#toplinks a {
     text-decoration:none;
     background:black;
     color:khaki;
-    border-radius:0.2em;
+    border-radius:0.4em;
 }
 div#moon {
     margin-top:32px;
