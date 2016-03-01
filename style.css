@@ -4,15 +4,14 @@ html, body {
     background-color:whitesmoke;
     font-family:Verdana, Geneva, Helvetica, Arial, sans-serif;
 }
+div#header img {
+    width:100%;
+}
 div#content {
     margin:auto;
     max-width:720px;
     border:1px solid silver;
     background-color:white;
-    border-radius:12px;
-}
-div#header img {
-    width:100%;
     border-radius:12px;
 }
 div#body {
@@ -25,6 +24,23 @@ div#body iframe {
     margin-left:-16px;
     width:720px;
     height:480px;
+}
+div#toplinks a {
+    padding:0.4em 0.8em;
+    text-decoration:none;
+    background:black;
+    color:white;
+    border-radius:0.2em;
+}
+div#moon {
+    margin-top:32px;
+    float:right;
+    width:100px;
+    text-align:center;
+    font-size:x-small;
+}
+div#moon img {
+    border-radius:50%;
 }
 img#clearsky, img#spectrum, img#elements, img#constellations {
     -webkit-filter:grayscale(100%);
