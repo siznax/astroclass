@@ -1,9 +1,9 @@
-html, body {
-    margin:0;
-    padding:0;
-    background-color:whitesmoke;
-    font-family:Verdana, Geneva, Helvetica, Arial, sans-serif;
+/* siznax.github.io/astroclass */
+
+a.button {
+    cursor:pointer;
 }
+
 div#apod {
     margin:auto;
     max-width:720px;
@@ -20,14 +20,6 @@ div#header {
 div#header img {
     width:100%;
 }
-div#content {
-    margin:auto;
-    margin-top:16px;
-    max-width:720px;
-    border:1px solid silver;
-    background-color:white;
-    border-radius:12px;
-}
 div#body {
     padding:1em;
 }
@@ -39,6 +31,32 @@ div#body iframe {
     width:720px;
     height:480px;
 }
+div#content {
+    margin:auto;
+    margin-top:8px;
+    max-width:720px;
+    border:1px solid silver;
+    background-color:white;
+    border-radius:12px;
+}
+div#footer {
+    margin-bottom:240px;
+}
+div#moon {
+    margin-top:-64px;
+    float:right;
+    width:100px;
+    text-align:center;
+    font-size:x-small;
+}
+div#moon img {
+    width:100px;
+    height:100px;
+    border-radius:50%;
+}
+div#outline, div#sky, div#symbols, div#resources {
+    display:none;
+}
 div#toplinks {
     margin-top:8px;
 }
@@ -49,16 +67,14 @@ div#toplinks a {
     color:khaki;
     border-radius:0.4em;
 }
-div#moon {
-    margin-top:32px;
-    float:right;
-    width:100px;
-    text-align:center;
-    font-size:x-small;
+
+html, body {
+    margin:0;
+    padding:0;
+    background-color:whitesmoke;
+    font-family:Verdana, Geneva, Helvetica, Arial, sans-serif;
 }
-div#moon img {
-    border-radius:50%;
-}
+
 img#clearsky, img#spectrum, img#elements, img#constellations {
     -webkit-filter:grayscale(100%);
     filter:grayscale(100%);

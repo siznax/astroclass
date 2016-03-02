@@ -15,20 +15,16 @@
       <div id="body">
 
         <div id="toplinks">
-        <a href="#outline">Outline</a>
-        <a href="#current">Current sky</a>
-        <a href="#symbols">Symbols</a>
-        <a href="#resources">Resources</a>
+        <a id="main" class="button">&#x1f3eb;</a>
+        <a id="outline" class="button">Outline</a>
+        <a id="sky" class="button">Sky</a>
+        <a id="symbols" class="button">Symbols</a>
+        <a id="resources" class="button">Resources</a>
         </div>
 
-        <div id="moon">
-        <a href="http://aa.usno.navy.mil/imagery/moon" target="_blank">
-          <img src="http://tycho.usno.navy.mil/cgi-bin/phase.gif"
-               title="Current phase of the moon (USNO)"
-               alt="Current phase of the moon (USNO)"></a>
-        <br>Current Moon Phase</div>
-        
         <h1>Astronomy at Woodside</h1>
+
+        <div id="main" class="section">
 
         <ul>
           <li>History of Astronomy (<a href="https://docs.google.com/document/d/1w943p-SwgJZETUNcYJhEAkjDQ5SUpH2grKEeMB-SQe0/edit?usp=sharing">handout</a>,
@@ -59,7 +55,9 @@
           <li>Assignment: Student questionnaire (Due Monday)
         </ul>
 
-        <a name="outline"><hr></a>
+        </div>
+
+        <div id="outline" class="section">
 
         <h2>Outline</h2>
 
@@ -78,9 +76,19 @@
 
         <p>See this document: <a href="https://docs.google.com/document/d/1jiEkcFXIqvnrjuDX1toThM9MMfRteDrGrhEUMB-KHKQ/edit?usp=sharing" target="_blank">Points available</a></p>
 
-        <a name="current"><hr></a>
+        </div>
 
-        <h2>Current sky</h2>
+        <div id="sky" class="section">
+
+        <div id="moon">
+        <!-- "http://static.die.net/moon/480.jpg" -->
+        <img src="http://tycho.usno.navy.mil/cgi-bin/phase.gif"
+             title="Current phase of the moon (USNO)"
+             alt="Current phase of the moon (USNO)">
+        <br><a href="http://aa.usno.navy.mil/imagery/moon"
+               target="_blank">Current Moon Phase</a></div>
+
+        <h2>Current Sky</h2>
 
         <p>
           <blockquote>
@@ -118,9 +126,13 @@
         <div align="center">
           <h3>Current Solar System Configuration</h3>
           <a href="http://www.fourmilab.ch/cgi-bin/Solar" target="_blank">
-            <img id="solarsystem" alt="Current solar system configuration"
+            <img id="solarsystem" alt="Current solar system" width="640"
                  src="http://www.fourmilab.ch/cgi-bin/Solar?di=225212481A830B86F210C49DC73D20D71D335A65742C4AF748CC56B5A753074B37A480E2E7DEE378E2B307A6DF7D4951CED73C119ED58489F9E4F8B293C91D"></a></div>
         
+        </div>
+
+        <div id="symbols" class="section">
+
         <a name="symbols"></a>
 
         <div align="center">
@@ -131,40 +143,42 @@
           <h3>Greek Alphabet</h3>
           <img alt="Greek Alphabet" src="Greek.png"></div>
 
-        <div align="center" style="margin:64px 0;">
+        <div align="center">
           <h3>Electromagnetic Spectrum</h3>
           <a href="spectrum.png">
             <img id="spectrum" alt="Electromagnetic (EM) Spectrum"
                  src="spectrum.png"></a></div>
 
-        <div align="center" style="margin:64px 0;">
+        <div align="center">
           <h3>Periodic Table of Elements</h3>
           <a href="elements.png">
             <img id="elements" alt="Periodic Table of Elements"
                  src="elements.png"></a></div>
 
-        <div align="center" style="margin:64px 0;">
+        <div align="center">
           <h3>88 Modern <a href="https://en.wikipedia.org/wiki/88_modern_constellations"
                            target="_blank">Constellations</h3>
           <a href="constellations.png">
             <img id="constellations" alt="Modern Constellations"
                  src="constellations.png"></a></div>
 
-        <div align="center" style="margin:64px 0;">
+        <div align="center">
           <h3>Messier objects</h3>
           <a href="https://en.wikipedia.org/wiki/Messier_objects"
              target="_blank">
             <img id="messier" alt="Messier objects"
                  src="Messier.jpg"></a></div>
 
-        <div align="center" style="margin:64px 0;">
+        <div align="center">
           <h3>Caldwell catalogue</h3>
           <a href="https://en.wikipedia.org/wiki/Caldwell_catalogue"
              target="_blank">
             <img id="caldwell" alt="Caldwell catalogue"
                  src="Caldwell.jpg"></a></div>
 
-        <a name="resources"><hr></a>
+        </div>
+
+        <div id="resources" class="section">
 
         <h2>Resources</h2>
 
@@ -206,10 +220,12 @@
             <li><a href="https://www.youtube.com/channel/UC7_gcs09iThXybpVgjHZ_7g" targe="_blank">PBS Space Time</a>
         </ul>
 
+        </div>
+
       </div>
     </div>
 
-    <div align=center style="margin:32px;">
+    <div id="footer" align="center">
       <a href="https://github.com/siznax/astroclass/"
          title="Fork me on GitHub" target="_blank">
         <img src="Octocat.png" style="padding:32px;"></a></div>
