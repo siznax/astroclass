@@ -80,3 +80,7 @@ img#moon {
     height:100px;
     border-radius:50%;
 }
+
+span#header {
+    margin-left:8px;
+}

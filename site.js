@@ -16,8 +16,17 @@ var KEY = {
 
 $(function() {
 
+    // slide heaader up/down
+    $("span#header").click(function() {
+        if ($("div#header").is(":visible")) {
+            $("div#header").slideUp();
+        } else {
+            $("div#header").slideDown();
+        }
+    });
+
     // toggle sections
-    $(".button").click(function() {
+    $("a.button").click(function() {
         var clicked = this.id;
         $(".section").each(function() {
             var selector = "#" + this.id + ".section";
