@@ -42,22 +42,10 @@ div#content {
 div#footer {
     margin-bottom:240px;
 }
-div#moon {
-    margin-top:-64px;
-    float:right;
-    width:100px;
-    text-align:center;
-    font-size:x-small;
-}
-div#moon img {
-    width:100px;
-    height:100px;
-    border-radius:50%;
-}
 div#outline, div#sky, div#symbols, div#resources {
     display:none;
 }
-div#symbols h3 {
+div#symbols h3, div#sky h3 {
     margin-top:4em;
 }
 div#toplinks {
@@ -86,4 +74,9 @@ img#clearsky, img#spectrum, img#elements, img#constellations {
 img#clearsky:hover, img#spectrum:hover, img#elements:hover, img#constellations:hover {
     filter:none;
     -webkit-filter:none;
+}
+img#moon {
+    width:100px;
+    height:100px;
+    border-radius:50%;
 }

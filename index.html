@@ -80,32 +80,7 @@
 
         <div id="sky" class="section">
 
-        <div id="moon">
-        <!-- "http://static.die.net/moon/480.jpg" -->
-        <img src="http://tycho.usno.navy.mil/cgi-bin/phase.gif"
-             title="Current phase of the moon (USNO)"
-             alt="Current phase of the moon (USNO)">
-        <br><a href="http://aa.usno.navy.mil/imagery/moon"
-               target="_blank">Current Moon Phase</a></div>
-
         <h2>Current Sky</h2>
-
-        <p>
-          <blockquote>
-            <table cellpadding=6 cellspacing=1 border=1>
-              <tr>
-                <th>Location
-                <th>Latitude
-                <th>Longitude
-              </tr>
-              <tr>
-                <td>San Francisco, CA
-                <td>37° 47' 19"N
-                <td>122° 24' 51"W
-              </tr>
-            </table>
-          </blockquote>
-        </p>
 
         <ul>
 <li><a href="http://www.skyandtelescope.com/observing/sky-at-a-glance/" target="_blank">This Week's Sky</a> &mdash; daily viewing tips, and planet round-up for the week
@@ -117,7 +92,31 @@
 <li><a href="http://www.cleardarksky.com/cgi-bin/sunmoondata.py?Mn=telescope%20accessory&id=SanFranCA">Sun and Moon data for one day</a> &mdash; USNO and Clear Sky Chart
         </ul>
 
-        <div align="center" style="margin:64px 0;">
+        <div align="center" id="coordinates">
+          <h3>Coordinates</h3>
+          <blockquote>
+            <table cellpadding=6 cellspacing=1 border=1>
+              <tr>
+                <th>Location
+                <th>Latitude
+                <th>Longitude
+                <th>Moon
+              </tr>
+              <tr>
+                <td>San Francisco, CA
+                <td>37° 47' 19"N
+                <td>122° 24' 51"W
+                <td><a href="http://aa.usno.navy.mil/imagery/moon"
+                       target="_blank">
+                    <img id="moon" src="http://tycho.usno.navy.mil/cgi-bin/phase.gif"
+                         title="Current phase of the moon (USNO)"
+                         alt="Current phase of the moon (USNO)">
+              </tr>
+            </table>
+          </blockquote>
+        </div>
+
+        <div align="center">
           <h3>Clear Sky Chart</h3>
           <a href="http://cleardarksky.com/c/SanFranCAkey.html" target="_blank">
             <img id="clearsky" alt="Clear Sky Chart"
@@ -136,7 +135,7 @@
         <a name="symbols"></a>
 
         <div align="center">
-          <h3 style="margin:1em;">Astronomical Symbols</h3>
+          <h2>Astronomical Symbols</h2>
           <img alt="Astronomical Symbols" src="symbols.png"></div>
 
         <div align="center">
@@ -182,20 +181,19 @@
 
         <h2>Resources</h2>
 
+        <div id="apod">
+          <img id="apod_img"><br>
+          <b><a href="http://apod.nasa.gov/" target="_blank">APOD</a></b>: 
+          <b><span id="apod_title"></span></b> &mdash;
+          <span id="apod_txt"></span></div>
+
         <ul>
-          <li><a href="http://apod.nasa.gov/apod/" target="_blank">APOD</a> Astronomy Picture of the Day
-          <li><a href="http://www.heavens-above.com/" target="_blank">Heavens Above</a> sky chart and currently visible man-made objects
+          <li><a href="http://www.heavens-above.com/" target="_blank">Heavens Above</a> currently visible man-made objects
           <li><a href="http://skymaps.com/" target="_blank">Sky Maps</a> free monthly sky maps
           <li><a href="http://www.ianridpath.com/startales/startales3.htm" target="_blank">Star Tales</a> by Ian Ridpath
           <li><a href="http://www.stellarium.org/" target="_blank">Stellarium</a> planetarium software
           <li><a href="http://www.wolframalpha.com/examples/Astronomy.html" target="_blank">Wolfram Alpha</a> Astronomy examples
         </ul>
-
-        <div id="apod">
-          <img id="apod_img"><br>
-          <a href="http://apod.nasa.gov/" target="_blank">APOD</a>
-          <b><span id="apod_title"></span></b> &mdash;
-          <span id="apod_txt"></span></div>
 
         <h3>Further Resources</h3>
 
@@ -206,9 +204,9 @@
           <li><a href="http://www.h2g2.com/" target="_blank">The Hitchhiker's Guide to the Galaxy</a>: Earth Edition
           <li><a href="http://www.universetoday.com/" target="_blank">Universe Today</a> space and astronomy news
           <li><a href="https://www.zooniverse.org/" target="_blank">Zooniverse</a> citizen science
-        </ul>        
+        </ul>
         
-        <h3>Video</h3>
+        <h4>Video</h4>
 
         <ul>
           <li><a href="http://stargazersonline.org/" target="_blank">Star Gazers</a> weekly video blog
