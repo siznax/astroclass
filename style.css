@@ -81,6 +81,13 @@ img#moon {
     border-radius:50%;
 }
 
+p.quote {
+    margin:32px;
+    opacity:0.8;
+    text-align:center;
+    font-size:smaller;
+}
+
 span#header {
     margin-left:8px;
 }
