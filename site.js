@@ -17,7 +17,7 @@ var KEY = {
 $(function() {
 
     // slide heaader up/down
-    $("span#header").click(function() {
+    $(document).on('click', "span#header", function() {
         if ($("div#header").is(":visible")) {
             $("div#header").slideUp();
         } else {
@@ -26,7 +26,7 @@ $(function() {
     });
 
     // toggle sections
-    $("a.button").click(function() {
+    $(document).on('click', "a.button", function() {
         var clicked = this.id;
         $(".section").each(function() {
             var selector = "#" + this.id + ".section";
@@ -46,4 +46,22 @@ $(function() {
         $("#apod_txt").text(data.explanation);
     });
 
+    if ($("body#test").length) {
+        var head = "http://siznax.github.io/astroclass/test/head.html";
+        var header = "http://siznax.github.io/astroclass/test/header.html";
+        var body = "http://siznax.github.io/astroclass/test/body.html";
+        var footer = "http://siznax.github.io/astroclass/test/footer.html";
+        $.get(head, function(dhead) {
+            $("head").append(dhead);
+            $.get(header, function(dheader) {
+                $("body").append(dheader);
+                $.get(body, function(dbody) {
+                    $("div#body").append(dbody);
+                    $.get(footer, function(dfooter) {
+                        $("body").append(dfooter); });
+                });
+            });
+        });
+    };
+    
 });

@@ -42,6 +42,9 @@ div#content {
 div#footer {
     margin-bottom:240px;
 }
+div#footer img {
+    padding:32px;
+}
 div#outline, div#sky, div#symbols, div#resources {
     display:none;
 }
