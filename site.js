@@ -40,7 +40,15 @@ $(function() {
 
     // get APOD
     var call = API["NASA"] + "?api_key=" + KEY["NASA"];
+    console.log(call);
     $.getJSON(call, function(data) {
+        if (data.media_type == "video") {
+            $("#apod_img").remove();
+            $("#apod").prepend("<div id=\"apod_video\"></div>");
+            var iframe = "<iframe src=\"" + data.url
+                + "\" allowfullscreen></iframe>";
+            $("#apod_video").append(iframe);
+        }
         $("#apod_img").attr('src', data.url);
         $("#apod_title").text(data.title);
         $("#apod_txt").text(data.explanation);
