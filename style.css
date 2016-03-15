@@ -7,6 +7,8 @@ a.button {
 div#apod {
     margin:auto;
     max-width:720px;
+    margin-top:48px;
+    margin-bottom:48px;
     font-size:x-small;
     text-align:justify;
 }
