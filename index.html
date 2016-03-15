@@ -10,7 +10,9 @@
     <script lang="javascript" src="site.js"></script>
   </head>
   <body>
-    <div id="header"><img alt="Stellarium capture" src="sky.png"></div>
+    <!-- <div id="header"> -->
+    <!--   <img alt="Stellarium capture" src="sky.png"> -->
+    <!-- </div> -->
     <div id="content">
       <div id="body">
 
@@ -20,23 +22,13 @@
         <a id="sky" class="button">Sky</a>
         <a id="symbols" class="button">Symbols</a>
         <a id="resources" class="button">Resources</a>
-        <span id="header">&#x1f30c;</span>
+        <!-- <span id="header">&#x1f30c;</span> -->
         </div>
 
         <h1>Astronomy at Woodside</h1>
 
         <div id="main" class="section">
 
-          <ul>
-            <li>Stars and Galaxies (<a href="https://docs.google.com/document/d/1xqQoqY6EZgEq5zYd_xa4EHwvnUMDpBE5-Sporov3AHI/edit?usp=sharing">handout</a>,
-              <a href="https://docs.google.com/document/d/1WlUHYztM3wrd65xIkiajwTDJ_piKgU5z-_8ss4JCApA/edit?usp=sharing">worksheet</a>)
-            <li>The Observable Universe & Cosmic Calendar (<a href="https://docs.google.com/document/d/19-r92uo25sUZha0oeQdr5bu5ttXNAPqjJzmG_rg4xfg/edit?usp=sharing">handout</a>)
-            <li>The Universe (<a href="https://docs.google.com/document/d/1ZZL8J0y-jy0GuCS3Zp35TdinJyFh0Yn64xNpzAdw3VE/edit?usp=sharing">handout</a>,
-              <a href="https://docs.google.com/document/d/11SKsWFvueg_pE1NRpBDk0L52qIL8zozu2_iWv4HjanE/edit?usp=sharing">worksheet</a>)
-            <li>History of Astronomy (<a href="https://docs.google.com/document/d/1w943p-SwgJZETUNcYJhEAkjDQ5SUpH2grKEeMB-SQe0/edit?usp=sharing">handout</a>,
-              <a href="https://docs.google.com/document/d/1B5axYYGAilzw9Y6YSxnTvzUTOZRnOkPq3aT_SRMWRxw/edit?usp=sharing">worksheet</a>)
-          </ul>
-        
         <p>Day 7: <i>Wed 16 Mar 2016</i></p>
         <ul>
           <li><i>The Universe</i> <b>QUIZ</b>
@@ -45,6 +37,12 @@
           <li>This week's sky
           <li><i>Stars & Galaxies</i> <b>Worksheet DUE Friday</b>
         </ul>
+
+        <div id="apod">
+          <img id="apod_img"><br>
+          <b><a href="http://apod.nasa.gov/" target="_blank">APOD</a></b>: 
+          <b><span id="apod_title"></span></b> &mdash;
+          <span id="apod_txt"></span></div>
 
         <p>Day 6: <i>Mon 14 Mar 2016</i></p>
         <ul>
@@ -121,10 +119,27 @@
           <li>Exotic objects
         </ol>
 
-        <h3>Points available</h3>
+        <h3>Points Available</h3>
 
-        <p>See this document: <a href="https://docs.google.com/document/d/1jiEkcFXIqvnrjuDX1toThM9MMfRteDrGrhEUMB-KHKQ/edit?usp=sharing" target="_blank">Points available</a></p>
+        <p>
+          <blockquote>See this document:
+            <a target="_blank"
+               href="https://docs.google.com/document/d/1jiEkcFXIqvnrjuDX1toThM9MMfRteDrGrhEUMB-KHKQ/edit?usp=sharing">Points available</a>
+          </blockquote>
+        </p>
 
+        <h3>Handouts</h3>
+
+        <ul>
+          <li>Stars and Galaxies (<a target="_blank" href="https://docs.google.com/document/d/1xqQoqY6EZgEq5zYd_xa4EHwvnUMDpBE5-Sporov3AHI/edit?usp=sharing">handout</a>,
+            <a target="_blank" href="https://docs.google.com/document/d/1WlUHYztM3wrd65xIkiajwTDJ_piKgU5z-_8ss4JCApA/edit?usp=sharing">worksheet</a>)
+          <li>The Observable Universe & Cosmic Calendar (<a target="_blank" href="https://docs.google.com/document/d/19-r92uo25sUZha0oeQdr5bu5ttXNAPqjJzmG_rg4xfg/edit?usp=sharing">handout</a>)
+          <li>The Universe (<a target="_blank" href="https://docs.google.com/document/d/1ZZL8J0y-jy0GuCS3Zp35TdinJyFh0Yn64xNpzAdw3VE/edit?usp=sharing">handout</a>,
+            <a target="_blank" href="https://docs.google.com/document/d/11SKsWFvueg_pE1NRpBDk0L52qIL8zozu2_iWv4HjanE/edit?usp=sharing">worksheet</a>)
+          <li>History of Astronomy (<a target="_blank" href="https://docs.google.com/document/d/1w943p-SwgJZETUNcYJhEAkjDQ5SUpH2grKEeMB-SQe0/edit?usp=sharing">handout</a>,
+            <a target="_blank" href="https://docs.google.com/document/d/1B5axYYGAilzw9Y6YSxnTvzUTOZRnOkPq3aT_SRMWRxw/edit?usp=sharing">worksheet</a>)
+        </ul>
+        
         </div>
 
         <div id="sky" class="section">
@@ -231,17 +246,11 @@
 
         <h2>Resources</h2>
 
-        <div id="apod">
-          <img id="apod_img"><br>
-          <b><a href="http://apod.nasa.gov/" target="_blank">APOD</a></b>: 
-          <b><span id="apod_title"></span></b> &mdash;
-          <span id="apod_txt"></span></div>
-
         <ul>
           <li><a href="http://www.heavens-above.com/" target="_blank">Heavens Above</a> currently visible man-made objects
           <li><a href="http://www.ianridpath.com/startales/startales3.htm" target="_blank">Star Tales</a> by Ian Ridpath
           <li><a href="http://www.stellarium.org/" target="_blank">Stellarium</a> planetarium software
-          <li><a href="http://www.wolframalpha.com/examples/Astronomy.html" target="_blank">Wolfram Alpha</a> Astronomy examples
+          <li><a href="http://www.wolframalpha.com/examples/Astronomy.html" target="_blank">Wolfram Alpha</a> astronomy examples
         </ul>
 
         <h3>Further Resources</h3>
