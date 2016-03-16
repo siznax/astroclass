@@ -16,9 +16,9 @@ div#apod img {
     width:720px;
 }
 div#apod iframe {
-    margin-left:-16px;
-    width:720px;
-    height:480px;
+    margin-left:-12px;
+    width:712px;
+    height:472px;
     border:0px;
 }
 div#header {
@@ -36,14 +36,16 @@ div#body img {
 }
 div#content {
     margin:auto;
-    margin-top:8px;
+    /* margin-top:8px; */
     max-width:720px;
-    border:1px solid silver;
+    /* border:1px solid silver; */
     background-color:white;
-    border-radius:12px;
+    /* border-radius:12px; */
+    border-bottom-right-radius:12px;
+    border-bottom-left-radius:12px;
 }
 div#footer {
-    margin-bottom:240px;
+    /* margin-bottom:240px; */
 }
 div#footer img {
     padding:32px;
@@ -51,8 +53,8 @@ div#footer img {
 div#outline, div#sky, div#symbols, div#resources {
     display:none;
 }
-div#symbols h3, div#sky h3 {
-    margin-top:4em;
+div#sky h3 {
+    margin-top:3em;
 }
 div#toplinks {
     margin-top:8px;
@@ -62,13 +64,13 @@ div#toplinks a {
     text-decoration:none;
     background:black;
     color:khaki;
-    border-radius:0.4em;
+    /* border-radius:0.4em; */
 }
 
 html, body {
     margin:0;
     padding:0;
-    background-color:whitesmoke;
+    background-color:#FFF8E7; /* cosmic latte */
     font-family:Verdana, Geneva, Helvetica, Arial, sans-serif;
 }
 
