@@ -70,19 +70,17 @@ div#toplinks a {
 html, body {
     margin:0;
     padding:0;
-    background-color:#FFF8E7; /* cosmic latte */
+    background-color:rgb(0,0,64);
     font-family:Verdana, Geneva, Helvetica, Arial, sans-serif;
 }
+body {
+    background:black; /* For browsers that do not support gradients */
+    background:-webkit-linear-gradient(black, rgb(0,0,64)); /* Safari */
+    background:-o-linear-gradient(     black, rgb(0,0,64)); /* Opera */
+    background:-moz-linear-gradient(   black, rgb(0,0,64)); /* Firefox */
+    background:linear-gradient(        black, rgb(0,0,64)); /* Standard syntax */
+}
 
-img#clearsky, img#spectrum, img#elements, img#constellations {
-    -webkit-filter:grayscale(100%);
-    filter:grayscale(100%);
-    border-radius:8px;
-}
-img#clearsky:hover, img#spectrum:hover, img#elements:hover, img#constellations:hover {
-    filter:none;
-    -webkit-filter:none;
-}
 img#moon {
     width:100px;
     height:100px;
