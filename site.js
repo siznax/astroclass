@@ -40,6 +40,7 @@ $(function() {
 
     // get APOD
     var call = API["NASA"] + "?api_key=" + KEY["NASA"];
+    // call = "https://api.nasa.gov/planetary/apod?api_key=vE9qJMI31OEuz1O8Wfwkvfj2Jl3mT23X3QgbSWZA&date=2016-03-15";
     console.log(call);
     $.getJSON(call, function(data) {
         if (data.media_type == "video") {

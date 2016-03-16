@@ -16,9 +16,9 @@ div#apod img {
     width:720px;
 }
 div#apod iframe {
-    margin-left:-12px;
-    width:712px;
-    height:472px;
+    margin-left:-4px;
+    width:696px;
+    height:456px;
     border:0px;
 }
 div#header {
