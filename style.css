@@ -70,7 +70,6 @@ div#toplinks a {
 html, body {
     margin:0;
     padding:0;
-    background-color:rgb(0,0,64);
     font-family:Verdana, Geneva, Helvetica, Arial, sans-serif;
 }
 body {
@@ -79,6 +78,11 @@ body {
     background:-o-linear-gradient(     black, rgb(0,0,64)); /* Opera */
     background:-moz-linear-gradient(   black, rgb(0,0,64)); /* Firefox */
     background:linear-gradient(        black, rgb(0,0,64)); /* Standard syntax */
+}
+html, body {
+    background-color:rgb(6,12,24);
+    background-image:url("tile.jpg");
+    background-repeat:repeat;
 }
 
 img#moon {
