@@ -15,7 +15,7 @@ div#apod {
 div#apod img {
     width:720px;
 }
-div#apod iframe {
+iframe {
     margin-left:-4px;
     width:696px;
     height:456px;
