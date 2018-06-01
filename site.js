@@ -4,14 +4,9 @@
 
 var API = {
     "NASA": "https://api.nasa.gov/planetary/apod",
-    "Astrobin": "http://astrobin.com/api/v1/"
 };
 var KEY = {
     "NASA": "vE9qJMI31OEuz1O8Wfwkvfj2Jl3mT23X3QgbSWZA",
-    "Astrobin": {
-        "key": "7ee117a088915d6ed8886d38c70b7d1e83ef7e88",
-        "secret": "ea058d21015918d587c6e99d7a3107bb24bdb742"
-    }
 };
 
 $(function() {
